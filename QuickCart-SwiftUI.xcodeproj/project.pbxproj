@@ -11,7 +11,12 @@
 		730F57002B937EA700E43188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730F56FF2B937EA700E43188 /* Assets.xcassets */; };
 		730F57032B937EA700E43188 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730F57022B937EA700E43188 /* Preview Assets.xcassets */; };
 		730F570D2B94B74600E43188 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F570C2B94B74600E43188 /* WelcomeView.swift */; };
-		730F57102B94C4A600E43188 /* ReusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F570F2B94C4A600E43188 /* ReusableButton.swift */; };
+		730F57132B94C64400E43188 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F57122B94C64400E43188 /* LoginView.swift */; };
+		730F57152B95C96900E43188 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F57142B95C96900E43188 /* LoginViewModel.swift */; };
+		730F57172B95CA9200E43188 /* CustomNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F57162B95CA9200E43188 /* CustomNumberPad.swift */; };
+		73D66C542B98BE5A00200279 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C532B98BE5A00200279 /* Countries.swift */; };
+		73D66C562B98C41700200279 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C552B98C41700200279 /* VerificationView.swift */; };
+		73D66C582B98CCF100200279 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C572B98CCF100200279 /* CodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +26,12 @@
 		730F57022B937EA700E43188 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		730F57092B94A96B00E43188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		730F570C2B94B74600E43188 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		730F570F2B94C4A600E43188 /* ReusableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableButton.swift; sourceTree = "<group>"; };
+		730F57122B94C64400E43188 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		730F57142B95C96900E43188 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		730F57162B95CA9200E43188 /* CustomNumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNumberPad.swift; sourceTree = "<group>"; };
+		73D66C532B98BE5A00200279 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		73D66C552B98C41700200279 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		73D66C572B98CCF100200279 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +64,8 @@
 		730F56FA2B937EA500E43188 /* QuickCart-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				730F570E2B94C40400E43188 /* Reusable */,
 				730F570A2B94B6B400E43188 /* App */,
 				730F570B2B94B6BD00E43188 /* Welcome */,
-				730F57112B94C60A00E43188 /* Authentication */,
 				730F57092B94A96B00E43188 /* Info.plist */,
 				730F56FF2B937EA700E43188 /* Assets.xcassets */,
 				730F57012B937EA700E43188 /* Preview Content */,
@@ -84,24 +92,15 @@
 		730F570B2B94B6BD00E43188 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				73D66C532B98BE5A00200279 /* Countries.swift */,
 				730F570C2B94B74600E43188 /* WelcomeView.swift */,
+				730F57122B94C64400E43188 /* LoginView.swift */,
+				730F57142B95C96900E43188 /* LoginViewModel.swift */,
+				73D66C552B98C41700200279 /* VerificationView.swift */,
+				730F57162B95CA9200E43188 /* CustomNumberPad.swift */,
+				73D66C572B98CCF100200279 /* CodeView.swift */,
 			);
 			path = Welcome;
-			sourceTree = "<group>";
-		};
-		730F570E2B94C40400E43188 /* Reusable */ = {
-			isa = PBXGroup;
-			children = (
-				730F570F2B94C4A600E43188 /* ReusableButton.swift */,
-			);
-			path = Reusable;
-			sourceTree = "<group>";
-		};
-		730F57112B94C60A00E43188 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D66C582B98CCF100200279 /* CodeView.swift in Sources */,
 				730F570D2B94B74600E43188 /* WelcomeView.swift in Sources */,
 				730F56FC2B937EA500E43188 /* QuickCart_SwiftUIApp.swift in Sources */,
-				730F57102B94C4A600E43188 /* ReusableButton.swift in Sources */,
+				730F57132B94C64400E43188 /* LoginView.swift in Sources */,
+				730F57152B95C96900E43188 /* LoginViewModel.swift in Sources */,
+				73D66C542B98BE5A00200279 /* Countries.swift in Sources */,
+				730F57172B95CA9200E43188 /* CustomNumberPad.swift in Sources */,
+				73D66C562B98C41700200279 /* VerificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
