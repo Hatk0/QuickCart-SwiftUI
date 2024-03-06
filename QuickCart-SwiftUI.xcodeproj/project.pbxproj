@@ -18,7 +18,6 @@
 		73D66C562B98C41700200279 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C552B98C41700200279 /* VerificationView.swift */; };
 		73D66C582B98CCF100200279 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C572B98CCF100200279 /* CodeView.swift */; };
 		73D66C5A2B98F37900200279 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D66C592B98F37900200279 /* GoogleService-Info.plist */; };
-		73D66C5C2B98FB3300200279 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C5B2B98FB3300200279 /* AlertView.swift */; };
 		DBE9E22135DD496A3E9D634A /* Pods_QuickCart_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0AD7ECFB51C875C30C8FA71 /* Pods_QuickCart_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +35,6 @@
 		73D66C552B98C41700200279 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		73D66C572B98CCF100200279 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		73D66C592B98F37900200279 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		73D66C5B2B98FB3300200279 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		952C0EF7C86996651D0CA2CA /* Pods-QuickCart-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCart-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		B0AD7ECFB51C875C30C8FA71 /* Pods_QuickCart_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCart_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AF04F6B154C7665647CF48 /* Pods-QuickCart-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCart-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				73D66C552B98C41700200279 /* VerificationView.swift */,
 				730F57162B95CA9200E43188 /* CustomNumberPad.swift */,
 				73D66C572B98CCF100200279 /* CodeView.swift */,
-				73D66C5B2B98FB3300200279 /* AlertView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 			files = (
 				73D66C582B98CCF100200279 /* CodeView.swift in Sources */,
 				730F570D2B94B74600E43188 /* WelcomeView.swift in Sources */,
-				73D66C5C2B98FB3300200279 /* AlertView.swift in Sources */,
 				730F56FC2B937EA500E43188 /* QuickCart_SwiftUIApp.swift in Sources */,
 				730F57132B94C64400E43188 /* LoginView.swift in Sources */,
 				730F57152B95C96900E43188 /* LoginViewModel.swift in Sources */,
