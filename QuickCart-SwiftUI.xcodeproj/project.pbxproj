@@ -17,6 +17,8 @@
 		73D66C542B98BE5A00200279 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C532B98BE5A00200279 /* Countries.swift */; };
 		73D66C562B98C41700200279 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C552B98C41700200279 /* VerificationView.swift */; };
 		73D66C582B98CCF100200279 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C572B98CCF100200279 /* CodeView.swift */; };
+		73D66C5A2B98F37900200279 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D66C592B98F37900200279 /* GoogleService-Info.plist */; };
+		DBE9E22135DD496A3E9D634A /* Pods_QuickCart_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0AD7ECFB51C875C30C8FA71 /* Pods_QuickCart_SwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		73D66C532B98BE5A00200279 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		73D66C552B98C41700200279 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		73D66C572B98CCF100200279 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		73D66C592B98F37900200279 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		952C0EF7C86996651D0CA2CA /* Pods-QuickCart-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCart-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		B0AD7ECFB51C875C30C8FA71 /* Pods_QuickCart_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickCart_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AF04F6B154C7665647CF48 /* Pods-QuickCart-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickCart-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE9E22135DD496A3E9D634A /* Pods_QuickCart_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298AE4D45CD0040F0BCF5EE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				952C0EF7C86996651D0CA2CA /* Pods-QuickCart-SwiftUI.debug.xcconfig */,
+				B7AF04F6B154C7665647CF48 /* Pods-QuickCart-SwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		730F56EF2B937EA500E43188 = {
 			isa = PBXGroup;
 			children = (
 				730F56FA2B937EA500E43188 /* QuickCart-SwiftUI */,
 				730F56F92B937EA500E43188 /* Products */,
+				298AE4D45CD0040F0BCF5EE0 /* Pods */,
+				9E6E612A5A143792E2A17B2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,7 @@
 				730F570A2B94B6B400E43188 /* App */,
 				730F570B2B94B6BD00E43188 /* Welcome */,
 				730F57092B94A96B00E43188 /* Info.plist */,
+				73D66C592B98F37900200279 /* GoogleService-Info.plist */,
 				730F56FF2B937EA700E43188 /* Assets.xcassets */,
 				730F57012B937EA700E43188 /* Preview Content */,
 			);
@@ -103,6 +122,14 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		9E6E612A5A143792E2A17B2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0AD7ECFB51C875C30C8FA71 /* Pods_QuickCart_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 730F57062B937EA700E43188 /* Build configuration list for PBXNativeTarget "QuickCart-SwiftUI" */;
 			buildPhases = (
+				7D20F3C9DB45714B8EE1FE38 /* [CP] Check Pods Manifest.lock */,
 				730F56F42B937EA500E43188 /* Sources */,
 				730F56F52B937EA500E43188 /* Frameworks */,
 				730F56F62B937EA500E43188 /* Resources */,
+				1F59A50D4AD982492CF1AD47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,10 +192,53 @@
 			files = (
 				730F57032B937EA700E43188 /* Preview Assets.xcassets in Resources */,
 				730F57002B937EA700E43188 /* Assets.xcassets in Resources */,
+				73D66C5A2B98F37900200279 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F59A50D4AD982492CF1AD47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickCart-SwiftUI/Pods-QuickCart-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D20F3C9DB45714B8EE1FE38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickCart-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		730F56F42B937EA500E43188 /* Sources */ = {
@@ -308,6 +380,7 @@
 		};
 		730F57072B937EA700E43188 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952C0EF7C86996651D0CA2CA /* Pods-QuickCart-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +389,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"QuickCart-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = AUR8GZBZK7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QuickCart-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,6 +415,7 @@
 		};
 		730F57082B937EA700E43188 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AF04F6B154C7665647CF48 /* Pods-QuickCart-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,6 +424,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"QuickCart-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = AUR8GZBZK7;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "QuickCart-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
