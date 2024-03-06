@@ -33,7 +33,7 @@ struct VerificationView: View {
                     .padding()
                     .frame(height: UIScreen.main.bounds.height / 5)
                     
-                    Text("Code sent to + 7 | \(viewModel.phoneNumber)")
+                    Text("Code sent to +7 | \(viewModel.phoneNumber)")
                         .foregroundStyle(.gray)
                         .padding(.bottom)
                     

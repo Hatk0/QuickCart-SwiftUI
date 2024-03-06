@@ -46,7 +46,14 @@ struct LoginView: View {
                     }
                 }
                 
-                NavigationLink(destination: VerificationView(viewModel: viewModel)) {
+                NavigationLink(destination: VerificationView(viewModel: viewModel), isActive: $viewModel.gotoVerify) {
+                    Text("")
+                        .hidden()
+                }
+                
+                Button {
+                    viewModel.sendCode()
+                } label: {
                     Text("Continue")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundStyle(.white)
@@ -73,6 +80,10 @@ struct LoginView: View {
                 .offset(y: 280)
             }
             .ignoresSafeArea(.all)
+            
+            if viewModel.error {
+                AlertView(message: viewModel.errorMessage, show: $viewModel.error)
+            }
         }
         .toolbar(.hidden)
         .navigationBarBackButtonHidden()
