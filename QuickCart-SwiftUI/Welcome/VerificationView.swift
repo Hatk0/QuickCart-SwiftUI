@@ -1,9 +1,11 @@
 import SwiftUI
+import Firebase
 
 struct VerificationView: View {
     @ObservedObject var viewModel: LoginViewModel
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) var present
+    @State private var isNavigating = false
     
     var body: some View {
         ZStack {
@@ -27,6 +29,10 @@ struct VerificationView: View {
                         Text("Verify Number")
                             .font(.system(size: 24, weight: .bold))
                             .foregroundStyle(.white)
+                        
+                        if viewModel.loadingView {
+                            ProgressView()
+                        }
                         
                         Spacer()
                     }
@@ -55,7 +61,7 @@ struct VerificationView: View {
                             .foregroundStyle(.gray)
                         
                         Button {
-                            
+                            viewModel.requestCode()
                         } label: {
                             Text("Request Again")
                                 .fontWeight(.bold)
@@ -73,7 +79,8 @@ struct VerificationView: View {
                     .padding(.top, 6)
                     
                     Button {
-                        print("Tapped")
+                        viewModel.verifyCode()
+                        isNavigating = viewModel.isLoggedIn
                     } label: {
                         Text("Verify and Create Account")
                             .font(.system(size: 16, weight: .semibold))
@@ -83,6 +90,9 @@ struct VerificationView: View {
                     .background(Color("buttonColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 100))
                     .padding(.top, 10)
+                    .fullScreenCover(isPresented: $isNavigating) {
+                        HomeView()
+                    }
                 }
                 
                 ZStack {
@@ -94,6 +104,10 @@ struct VerificationView: View {
                         .offset(y: -65)
                 }
                 .offset(y: 60)
+            }
+            
+            if viewModel.error {
+                AlertView(message: viewModel.errorMessage, show: $viewModel.error)
             }
         }
         .ignoresSafeArea(.all)
@@ -111,8 +125,4 @@ struct VerificationView: View {
         
         return ""
     }
-}
-
-#Preview {
-    VerificationView(viewModel: LoginViewModel())
 }

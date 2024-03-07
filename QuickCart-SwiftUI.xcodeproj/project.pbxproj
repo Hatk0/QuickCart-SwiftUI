@@ -15,6 +15,8 @@
 		730F57152B95C96900E43188 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F57142B95C96900E43188 /* LoginViewModel.swift */; };
 		730F57172B95CA9200E43188 /* CustomNumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730F57162B95CA9200E43188 /* CustomNumberPad.swift */; };
 		7360CB4C2B990304004A69DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7360CB4B2B990303004A69DA /* GoogleService-Info.plist */; };
+		7360CB4E2B99051C004A69DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360CB4D2B99051C004A69DA /* AlertView.swift */; };
+		7360CB502B999E12004A69DA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360CB4F2B999E12004A69DA /* HomeView.swift */; };
 		73D66C542B98BE5A00200279 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C532B98BE5A00200279 /* Countries.swift */; };
 		73D66C562B98C41700200279 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C552B98C41700200279 /* VerificationView.swift */; };
 		73D66C582B98CCF100200279 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D66C572B98CCF100200279 /* CodeView.swift */; };
@@ -34,6 +36,8 @@
 		730F57142B95C96900E43188 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		730F57162B95CA9200E43188 /* CustomNumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNumberPad.swift; sourceTree = "<group>"; };
 		7360CB4B2B990303004A69DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7360CB4D2B99051C004A69DA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		7360CB4F2B999E12004A69DA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		73D66C532B98BE5A00200279 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		73D66C552B98C41700200279 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		73D66C572B98CCF100200279 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				73D66C552B98C41700200279 /* VerificationView.swift */,
 				730F57162B95CA9200E43188 /* CustomNumberPad.swift */,
 				73D66C572B98CCF100200279 /* CodeView.swift */,
+				7360CB4D2B99051C004A69DA /* AlertView.swift */,
+				7360CB4F2B999E12004A69DA /* HomeView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 			files = (
 				73D66C582B98CCF100200279 /* CodeView.swift in Sources */,
 				730F570D2B94B74600E43188 /* WelcomeView.swift in Sources */,
+				7360CB4E2B99051C004A69DA /* AlertView.swift in Sources */,
+				7360CB502B999E12004A69DA /* HomeView.swift in Sources */,
 				730F56FC2B937EA500E43188 /* QuickCart_SwiftUIApp.swift in Sources */,
 				730F57132B94C64400E43188 /* LoginView.swift in Sources */,
 				730F57152B95C96900E43188 /* LoginViewModel.swift in Sources */,
